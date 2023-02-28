@@ -24,10 +24,10 @@
 
     }
     
-    /* li:hover{
+    .menuprin li:hover{
         background-color: black;
         color: white;
-    } */
+    } 
 
     .menupricipal { 
         padding: 20px;
@@ -76,7 +76,7 @@
         left: 300;
     }
 
-    #container{
+    #listadoareas{
 		margin: 0 auto;
 		padding: 10px;
         list-style-type: none; 
@@ -84,20 +84,20 @@
 		 
     } 
 
-	#container ul{
+	#listadoareas ul{
         display: inline-block;
         list-style-position: outside;
         list-style-type: disc;
 	}
 
-	#container li{
+	#listadoareas li{
         padding: 5px;
 	}
     
 </style>
 
 <body>
-    <div id="menus">
+    <div class="menuprin" id="menus">
         <ul>
             <li>Inicio</li>
             <li><a href="#boxmodel">Box Model</a></li>
@@ -144,7 +144,7 @@
         <p>Cada elemento HTML es una caja que tiene 4 lados y se compone de cuatro áreas:</p>
         <center><img src="imagenes/margen.png"width="700"height="450"></center>
             <h3>Internos</h3>
-            <div id="container">
+            <div id="listadoareas">
             <ul >
                 <li>Content Box</li>
                 <li>Padding Box</li>
@@ -152,7 +152,7 @@
             </ul>
         </div>
         <h3>Externos</h3>
-        <div id="container">
+        <div id="listadoareas">
             <ul >
                 <li>Margin Box</li>
             </ul>
