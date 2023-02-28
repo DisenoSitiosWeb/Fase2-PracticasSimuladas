@@ -52,15 +52,15 @@
         text-align: center;
     }
     .textoparrafo {
-            padding: 40px;
-            margin: 40px;
-            background-position: center;
-            font-family: Arial, Helvetica, sans-serif;
-            color: #000000;
-            background-color: #B3B3B3;
-            text-align: start;
-            text-align: right;
-            line-height: 1.7;
+        padding: 40px;
+        margin: 40px;
+        background-position: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #000000;
+        background-color: #B3B3B3;
+        text-align: start;
+        text-align: right;
+        line-height: 1.7;
     }
  
     .footer {
@@ -77,14 +77,19 @@
     }
 
     #listadoareas{
-		margin: 0 auto;
-		padding: 10px;
+		margin: 2px;
+		padding: 2px;
+        border: 0px;
         list-style-type: none; 
         justify-content: center;
 		 
     } 
 
 	#listadoareas ul{
+        margin: 2px;
+        margin-bottom: 2px;
+        margin-top: 2px;
+        padding: 2;
         display: inline-block;
         list-style-position: outside;
         list-style-type: disc;
@@ -92,6 +97,25 @@
 
 	#listadoareas li{
         padding: 5px;
+	}
+
+    #subtitulos{
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+		margin: 5px;
+		padding: 2px;
+        border: 0px;
+	}
+    h3{
+        margin-top: 5px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+		margin: 5px;
+		padding: 5px;
+        border: 0px;    
 	}
     
 </style>
@@ -143,21 +167,19 @@
         </p>
         <p>Cada elemento HTML es una caja que tiene 4 lados y se compone de cuatro áreas:</p>
         <center><img src="imagenes/margen.png"width="700"height="450"></center>
+
+            <div class="subtitulos" id="listadoareas">
             <h3>Internos</h3>
-            <div id="listadoareas">
             <ul >
                 <li>Content Box</li>
                 <li>Padding Box</li>
                 <li>Border Box</li>
             </ul>
-        </div>
-        <h3>Externos</h3>
-        <div id="listadoareas">
+            <h3 class="subtitulos">Externos</h3>
             <ul >
                 <li>Margin Box</li>
             </ul>
         </div>
-
         <p>Estas áreas se apilan para formar el modelo de caja o box model. Cada elemento HTML es una caja que podemos controlar 
             en el espacio exterior con la propiedad margin, después, podemos darle un borde y con la propiedad padding,
             también podemos proporcionar los espacios interiores entre el contenido y el borde dentro de la caja.</p>
